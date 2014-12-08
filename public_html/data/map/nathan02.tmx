@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="70" tileheight="70" backgroundcolor="#aa00ff">
+ <tileset firstgid="1" name="background-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../data/img/background-tiles.png" width="910" height="910"/>
+ </tileset>
+ <tileset firstgid="170" name="meta-tiles" tilewidth="70" tileheight="70">
+  <image source="../../../data/img/meta-tiles.png" width="350" height="70"/>
+  <tile id="1">
+   <properties>
+    <property name="type" value="lslope"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="type" value="rslope"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="type" value="solid"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="175" name="mtgz" tilewidth="70" tileheight="70">
+  <image source="../../../../../../Users/Student/Downloads/mtgz.jpg" width="150" height="150"/>
+ </tileset>
+ <layer name="background" width="16" height="9">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFcAAABXAAAAVwAAAFcAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFcAAABXAAAAVwAAAFcAAABXAAAAVwAAAFcAAABXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxAAAAAAAAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWwAAAJMAAACTAAAAXAAAAAAAAAAAAAAAAAAAAAAAAAA5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbAAAAkwAAAJAAAACGAAAAhgAAAJEAAABcAAAAAAAAAAAAAAAAAAAAOQAAAAAAAACTAAAAkwAAAJMAAACTAAAAkAAAAIYAAACGAAAAhgAAAIYAAACGAAAAkQAAAJMAAACTAAAAkwAAAJMAAACTAAAA
+  </data>
+ </layer>
+ <layer name="collision" width="16" height="9" opacity="0.18">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK4AAACuAAAArgAAAK4AAACuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK4AAACuAAAArgAAAK4AAACuAAAArgAAAK4AAACuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqwAAAK4AAACuAAAArQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACrAAAArgAAAK4AAACuAAAArgAAAK4AAACtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACuAAAArgAAAK4AAACuAAAArgAAAK4AAACuAAAArgAAAK4AAACuAAAArgAAAK4AAACuAAAArgAAAK4AAACuAAAA
+  </data>
+ </layer>
+ <objectgroup name="EnemyEntities">
+  <object name="BadGuy" x="493" y="364" width="137" height="55"/>
+ </objectgroup>
+ <objectgroup name="trigger-entities">
+  <properties>
+   <property name="level" value="nathan03"/>
+  </properties>
+  <object name="levelTrigger" x="967" y="372" width="98" height="184">
+   <properties>
+    <property name="level" value="nathan03"/>
+    <property name="xspawn" value="400"/>
+    <property name="yspawn" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
