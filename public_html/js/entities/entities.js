@@ -64,7 +64,7 @@ game.LevelTrigger = me.Entity.extend({
     onCollision: function() {
         this.body.setCollisionMask(me.collision.types.NO_OBJECT);
         me.levelDirector.loadLevel(this.level);
-        me.state.current().resetPlayer(); 
+        me.state.current().resetPlayer(0, 0); 
 
     }
 
@@ -92,7 +92,12 @@ game.BadGuy = me.Entity.extend({
         this.pos.x = x + width - this.spritewidth;
         this.updateBounds();
         this.alwaysUpdate = true;
-//        this.walk
+       this.walkLeft = true;
+       this.type = 'badguy';
+       
+//       this.renderable.addAnimation("run", [0, 1, 2], 80);
+//       
+//       this.body.setVeocity(2, 6);
 
     },
     update: function(delta) {
