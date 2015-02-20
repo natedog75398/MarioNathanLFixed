@@ -50,9 +50,9 @@ game.PlayerEntity = me.Entity.extend({
         return true;
     },
     collideHandler: function(response) {
-//        if(response.b.type === 'badguy'){
-//            me.state.change(me.state.MENU);
-//        }
+      if(response.b.type === 'badguy'){
+         me.state.change(me.state.MENU);
+      }
 
     }
 
